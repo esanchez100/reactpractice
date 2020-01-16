@@ -1,17 +1,26 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 
 
-class Main extends Component{
-    state= {
+class Main extends Component {
+    state = {
 
     };
 
-    render(){
+    render() {
         return (
-        <div>
-        <h1>Hello!</h1>
- 
-        </div>)
+            <div>
+                <h1>Welcome!</h1>
+                <form>
+                    <input type="text"
+                        id="user"
+                        name="user"
+                        value={this.state.username}
+                        onChange={this.handleInputChange}
+                        placeholder="Start typing...">
+                    </input>
+                </form>
+
+            </div>)
     }
 }
 
